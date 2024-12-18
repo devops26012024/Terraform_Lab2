@@ -72,14 +72,3 @@ resource "aws_route_table_association" "public" {
   route_table_id = aws_route_table.public.id
 }
 
-# EC2 Instance
-resource "aws_instance" "web" {
-  ami           = "ami-053b12d3152c0cc71"  
-  instance_type = "t2.micro"
-  subnet_id     = aws_subnet.public.id
-  security_groups = [aws_security_group.allow_ssh.name]
-
-  tags = {
-    Name = "web-instance"
-  }
-}
