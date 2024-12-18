@@ -6,7 +6,7 @@ terraform {
     encrypt        = true
     dynamodb_table = "terraform_demo"
   }
-}
+} 
 
 provider "aws" {
   region = "ap-south-1"
