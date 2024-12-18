@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "storage" {
-  bucket = "Pradeep-training-123322"
+  bucket = "pradeep-training-123322"
   tags = {
     Name = "storage-bucket"
   }
