@@ -1,4 +1,4 @@
-name: Deploy AWS VPC set up
+name: Deploy_AWS_VPC_set_up
 on:  
   push:
     branches:
